@@ -7,7 +7,7 @@
 
 const char* host = "HOSTNAME"; // Update with your desired hostname
 const char* ssid = "SSID"; // Update with your SSID
-const char* password = "gandolf1"; // Update with your WiFi password
+const char* password = "PASSWORD"; // Update with your WiFi password
 
 WebServer server(80);
 
