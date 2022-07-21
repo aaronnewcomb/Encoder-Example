@@ -5,9 +5,9 @@
 #include <ESPmDNS.h>
 #include <Update.h>
 
-const char* host = "esp32-trinitron";
-const char* ssid = "Newcomb2";
-const char* password = "gandolf1";
+const char* host = "HOSTNAME"; // Update with your desired hostname
+const char* ssid = "SSID"; // Update with your SSID
+const char* password = "gandolf1"; // Update with your WiFi password
 
 WebServer server(80);
 
@@ -26,6 +26,8 @@ long oldPosition2  = -999;
 
 /*
  * Login page
+ * Update this line with your desired username and password for OTA update
+ * "if(form.userid.value=='admin' && form.pwd.value=='admin')"
  */
 
 const char* loginIndex =
@@ -59,7 +61,7 @@ const char* loginIndex =
 "<script>"
     "function check(form)"
     "{"
-    "if(form.userid.value=='admin' && form.pwd.value=='stephen6699')"
+    "if(form.userid.value=='admin' && form.pwd.value=='admin')"
     "{"
     "window.open('/serverIndex')"
     "}"
